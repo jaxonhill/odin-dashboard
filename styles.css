@@ -1,19 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;500;700;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+    --lightblue: hsl(210, 96%, 61%);
+    --offblack: hsl(219, 22%, 25%);
+    --logogray: hsl(214, 7%, 62%);
+    --textgray: hsl(214, 5%, 53%);
+    --lightgray: hsl(210, 16%, 94%);
+    --otherblue: hsl(210, 95%, 71%);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 0.2306fr 0.5819fr 0.1875fr;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .sidebar {
+    display: grid;
+    /* grid-template-rows: 0.0889fr 0.38867fr 0.3506fr 0.1768fr; */
+    grid-template-rows: 10.8% 39.4% 42.18% 7.5%;
+    padding: 3rem 4.5rem 1rem 1.5rem;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.logo {
+    grid-row: 1 / 1;
     display: flex;
+    padding-bottom: 2rem;
+}
+
+.top-side {
+    grid-row: 2 / 2;
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 0.6rem;
+}
+
+.mid-side {
+    grid-row: 3 / 3;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+#logout {
+    grid-row: 4 / -1;
+    align-self: end;
+}
+
+.side-btn,
+.logo {
+    gap: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    height: 6.7rem;
+}
+
+.side-btn {}
+
+.side-btn>svg>path {
+    fill: var(--logogray);
+}
+
+.logout>svg>path,
+.wallet>svg>path {
+    fill: none;
+    stroke: var(--logogray);
+}
+
+.side-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: var(--textgray);
+    font-weight: 400;
+}
+
+.logo-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.1rem;
+    color: var(--offblack);
+    font-weight: 400;
+}
+
+.logo-text>span {
+    font-weight: 700;
 }
