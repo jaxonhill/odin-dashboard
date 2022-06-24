@@ -14,6 +14,8 @@
     --textgray: hsl(214, 5%, 53%);
     --lightgray: hsl(210, 16%, 94%);
     --otherblue: hsl(210, 95%, 71%);
+    --green: hsl(144, 68%, 52%);
+    --red: hsl(0, 93%, 57%);
 }
 
 .grid-container {
@@ -111,4 +113,142 @@
     background-color: var(--lightgray);
     margin: 1.5rem 0 1.5rem 0;
     border-radius: 3rem;
+    display: grid;
+    padding: 6rem 3rem 4.5rem 3rem;
+    grid-template-rows: 17% 83%;
+}
+
+.top-main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.search-bar {
+    width: 25.5rem;
+    height: 4.8rem;
+    margin-top: 0.6rem;
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4rem;
+}
+
+#search {
+    color: var(--offblack);
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+#search::placeholder {
+    color: var(--offblack);
+}
+
+#search-icon-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+#search-icon-btn:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 5.2rem;
+    color: var(--offblack);
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+}
+
+.card-container {
+    display: grid;
+    gap: 2.9rem;
+    /* grid-template-columns: repeat(auto-fill, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    overflow: auto;
+}
+
+.card {
+    border-radius: 2.5rem 2.5rem 2rem 2rem;
+    background-color: var(--offblack);
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-pic {
+    border-radius: 2rem 2rem 0 0;
+    height: 63%;
+    width: auto;
+}
+
+.bot-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.collection {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--otherblue);
+    font-size: 1.6rem;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.price-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.6rem;
+}
+
+.change-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.change {
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+}
+
+.positive {
+    color: var(--green);
+    fill: var(--green);
+}
+
+.negative {
+    color: var(--red);
+    fill: var(--red);
 }
