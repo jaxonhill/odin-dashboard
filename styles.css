@@ -25,6 +25,8 @@
     max-height: 100vh;
 }
 
+/* Sidebar styling starts here */
+
 .sidebar {
     display: grid;
     /* grid-template-rows: 0.0889fr 0.38867fr 0.3506fr 0.1768fr; */
@@ -75,8 +77,6 @@
     height: 6.7rem;
 }
 
-.side-btn {}
-
 .side-btn>svg>path {
     fill: var(--logogray);
 }
@@ -103,4 +103,12 @@
 
 .logo-text>span {
     font-weight: 700;
+}
+
+/* Main styling starts here */
+
+.main {
+    background-color: var(--lightgray);
+    margin: 1.5rem 0 1.5rem 0;
+    border-radius: 3rem;
 }
