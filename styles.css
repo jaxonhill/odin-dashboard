@@ -202,14 +202,14 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #fff;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .collection {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: var(--otherblue);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .card-footer {
@@ -228,7 +228,7 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #fff;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 
 .change-container {
@@ -251,4 +251,19 @@ h3 {
 .negative {
     color: var(--red);
     fill: var(--red);
+}
+
+.none-here {
+    border-radius: 2.5rem;
+    background-color: hsl(219, 22%, 25%, 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-slot {
+    font-size: 6rem;
+    text-align: center;
+    line-height: 6.5rem;
 }
