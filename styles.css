@@ -171,7 +171,7 @@ h1 {
     display: grid;
     gap: 2.9rem;
     /* grid-template-columns: repeat(auto-fill, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-template-rows: 1fr 1fr;
     overflow: auto;
 }
